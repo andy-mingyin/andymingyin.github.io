@@ -9,6 +9,6 @@ output:
 
 # This is Mingyin's awesome website
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
-Hi! This is Mingyin's website. 
+
+Hi! This is Mingyin. If you want to know about me,  visit [this page](about.html).
 
