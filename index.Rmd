@@ -10,5 +10,5 @@ output:
 # This is Mingyin's awesome website
 
 
-Hi! This is Mingyin. If you want to know about me,  visit [this page](about.html).
+Hi! This is Mingyin. If you want to know about my professional experience and ,  visit [this page](about.html).
 
