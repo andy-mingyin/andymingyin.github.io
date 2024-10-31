@@ -1,0 +1,14 @@
+---
+title: "Mingyin's website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# This is Mingyin's awesome website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+Hi! This is Mingyin's website. 
+

@@ -1,0 +1,89 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(plotly)
+library(dplyr)
+```
+
+```{r}
+library(p8105.datasets)
+data(ny_noaa)
+weather_df = ny_noaa
+```
+
+```{r}
+weather_df = weather_df |>
+  mutate(tmax = as.numeric(tmax),
+         tmin = as.numeric(tmin)) |>
+  filter(!is.na(tmax), !is.na(tmin))
+```
+
+I sampled 100 date from each year
+```{r}
+sampled_weather_df = weather_df |>
+  mutate(year = as.integer(format(date, "%Y"))) |>
+  group_by(year) |>
+  sample_n(100, replace = FALSE)
+
+```
+
+```{r}
+monthly_precip = sampled_weather_df |>
+  mutate(month = as.integer(format(date, "%m")),
+         year_month = as.Date(paste(year, month, "01", sep = "-"))) |>
+  group_by(year_month) |>
+  summarize(avg_precip = mean(prcp, na.rm = TRUE))
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+plot_ly(sampled_weather_df, 
+        x = ~tmin, 
+        y = ~tmax, 
+        type = 'scatter', 
+        mode = 'markers',
+        marker = list(size = 5)) |>
+  layout(title = "Max Temperature vs Min Temperature",
+         xaxis = list(title = "Min Temperature (°C)"),
+         yaxis = list(title = "Max Temperature (°C)"))
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+plot_ly(monthly_precip, 
+        x = ~year_month, 
+        y = ~avg_precip, 
+        type = 'scatter', 
+        mode = 'lines') |>
+  layout(title = "Monthly Average Precipitation",
+         xaxis = list(title = "Month"),
+         yaxis = list(title = "Average Precipitation (mm)"))
+```
+
+### Chart C
+
+```{r}
+plot_ly(sampled_weather_df, 
+        x = ~factor(year),  # Use ~ to let plotly interpret it directly
+        y = ~tmax, 
+        type = 'box') |>
+  layout(title = "Yearly Distribution of Max Temperature",
+         xaxis = list(title = "Year"),
+         yaxis = list(title = "Max Temperature (°C)"))
+```
+

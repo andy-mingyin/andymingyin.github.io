@@ -1,0 +1,50 @@
+---
+title: "About me"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+MINGYIN (ANDY) WANG
++1 3028984701 • andyholycross@hotmail.com • B1002 Central Capital, 2 Xian Cun Road, Guangzhou 
+EDUCATION                                                                                                
+Master‘s degree:
+Columbia University 																	        New York, NY
+Program: Biostatistics																  September 2024-May 2026
+Track: Public Health Data Science
+Bachelor’s degree:														 
+College of the Holy Cross																	   Worcester, MA
+Double Majors: Mathematics; Economics                      Minor: Statistics                  August 2020-May 2024
+Selected Courses: Multivariable Calculus, Mathematical Structures, Linear Algebra, Statistics, Probability Theory, Macroeconomics, Experimental Design, Linear Models, Microeconomics, Data Modeling with Python, Time Series Seminar, Mathematical Statistics, Categorical Data Analysis
+Programming & Software: Python (plotting, charting & data representation; machine learning, text mining, social network analysis), RStudio, MATLAB, STATA, Microsoft Office Suite, Google Suite 
+Technical Skills: Descriptive statistics; Linear regression; Logistic regression; Hypothesis test; Statistical inference; Analysis of variance (ANOVA); Derivation of parameter estimates; Analysis of covariance; Maximum Likelihood Estimation
+Honors & Awards: Dean’s List - First Honors, Spring 2024; Spring 2023; Dean’s List - Second Honors, Fall 2022, Spring 2021, Fall 2020; Member of Pi Mu Epsilon Honor Society, Cum Laude
+Languages: Mandarin Native; English, Proficient; Spanish, Conversational 
+WORK EXPERIENCE                                                                               _______
+Deloitte Consulting, Consulting Intern, Beijing, China                                    July 2023-September 2023
+	Conducted deep research about top companies in the stone industry in China, including total output, product types, export amount, price, and certification of their products. 
+	Researched the requirements of plumbing fixtures in the United States, including the general, fixtures, and the installation requirement. 
+Haitong Securities (600837.SH), Manager assistant Intern, Guangzhou, China                          May 2023-June 2023
+	Conducted deep research into the semiconductor industry—including its upstream, midstream, and downstream top companies and their report in these streams. 
+	Analyzed the report of the top companies in the semiconductor industry, plotted a chart of their data from the report, and helped write the analysis.
+Ipsos Consulting, Consulting Analyst Intern, Shanghai, China                                       June 2022-August 2022
+	Conducted deep research into the disease -- rheumatoid arthritis (RA), including its incidence, prevalence, etiology, pathogenesis, detection, diagnosis, as well as clinical treatment (medicinal drugs used)
+	Processed and analyzed RA’s incidence and prevalence data, using machine learning (linear regression) to forecast its future trend.
+SELECTED PROJECT EXPERIENCE                                                                        
+Python Programming 
+                                          
+	The following projects using Python programming to solve math problems were done in the course Linear Algebra
+	Use Jupyter in Python to plot vectors 
+	Solve systems of equations with matrices using Python 
+	Turn a list of words into an adjacency matrix and then to a planar graph using NetworkX
+	Plot a network using an adjacency matrix, evaluate matrix powers, plot probabilities on a network, implement Markov matrices and Markov Processes 
+R Programming 
+	The following projects using R programming to solve statistical problems were done in the course Statistics and Linear Models
+	Import provided birth data sets, explore these data sets, plot graphs, respond to given questions, e.g., dimensions of the data frame and variable or column names,  
+	Import provided data sets, analyzing the data by using linear regression and responding given questions
+SELECTED STUDENT LEADERSHIP                                                                                                                                 
+College of the Holy Cross Finance Club, Member, Worcester, MA                                 September 2020-May 2021                                                                                                                                        
+	Attend weekly sessions on finance and financial markets, discuss major news events in the financial markets in the US and globally
+	Led a group to work on a simulated stock pitch project aimed at analyzing the reasons why the long position should be made for JetBlue (NASDAQ: JBLU) with a focus on analyzing the airline industry, the performance of its main competitors and risks by utilizing relevant data 
+
